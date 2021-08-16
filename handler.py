@@ -42,7 +42,7 @@ def rossmann_predict():
         df3 = pipeline.data_preparation( df2 )
         
         #prediction
-        df_response = pipeline.get_prediction( model, test_raw, df3)
+        df_response = pipeline.get_prediction( modelo, test_raw, df3)
         #model = xgboost; test_raw = df da classe, df3 = dados c/predições
         # carrega o modelo treinado, carrega modelo original e entregue com as predições
         
