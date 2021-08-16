@@ -182,9 +182,9 @@ class Rossmann ( object ): #limpeza, transformação e encoding (para usar no ap
         
         return df5[cols_selected]
         
-    def get_prediction( self, model, original_data, test_data):
+    def get_prediction( self, modelo, original_data, test_data):
                   #prediction
-        pred = model.predict( test_data )
+        pred = modelo.predict( test_data )
                   
         #join pred into the original data
         original_data['prediction'] = np.expm1( pred ) #transformando expoente
